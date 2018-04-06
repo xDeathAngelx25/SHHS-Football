@@ -1,0 +1,307 @@
+.title {
+   color: black;
+    background-color: gold;
+    font-family: 'Oswald', sans-serif;
+    font-size: 50px;
+    text-align: center;
+} 
+
+
+h1{
+    color: black;
+    background-color: gold;
+    font-family: 'Oswald', sans-serif;
+    font-size: 50px;
+    text-align: center;
+}
+
+body {
+    background-color: black;
+}
+/**helmet in the background**/
+#helmet{
+    background-image:url("img/logo.2.jfif");
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    width:50%;
+}
+/**start navbar**/
+
+ul{
+    font-family: 'PT Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+  
+}
+
+
+li{
+float: left;
+padding-right: 20px;
+
+}
+
+li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding:14px 16px;
+    text-decoration: none;
+}
+
+li a:hover{
+    background-color: gold;
+}
+
+.active{
+    background-color: #4CAF50;
+}
+/**end of navbar**/
+p{
+    text-align: center;
+    font-size: 15px;
+    color: white;
+}
+
+td {
+    text-align: center;
+}
+
+table {
+    width: 100%;
+}
+
+th {
+    height: 50px;
+    background-color: Gold;
+    color: black;
+}
+
+tr {
+    background-color: Black;
+    color: white;
+ 
+}
+
+td{
+    padding: 10px;
+}
+
+.pic {
+    text-align: center;
+}
+
+/********Slideshow ****************/
+
+/*
+COMPETITION
+*/
+
+#extra-info {
+	display: none;
+
+}
+
+ /* Slideshow container */
+.slideshow-container, .slideshow-container2 {
+  max-width: 10%;
+  position: relative;
+  margin: 0 auto;
+  padding: 2.5%;
+  
+  background-color: gold;
+  
+	
+  
+ 
+}
+
+.slideshow-container img, .slideshow-container2 img {
+	max-width: 100%;
+	
+}
+
+/* Next & previous buttons */
+.prev, .next, .next2 {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next, .next2 {
+  right: 2.75%;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover, .next2:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+
+/********* 
+Cube css
+**************/
+
+.container,
+.content {
+	margin:10 auto;
+	margin-top: 50px;
+}
+.container {
+	width: 94.02985075%;
+	padding: 0 2.25em 4em;
+	background: #000;
+}
+
+.cube-container {
+	max-width: 200px;
+	text-align: center;
+	margin: 100px auto;
+}
+/* ---- Page Elements ---- */
+
+.name {
+	font-size: 1.65em;
+	font-weight: 800;
+	margin: 0 0 1.5em;
+	line-height: 1;
+}
+.name span {
+	font-weight: 300;
+	margin-left: -7px;
+}
+.logo {
+	width: 45px;
+	margin-bottom: .4em;
+	cursor: pointer;
+}
+.button {
+	font-size: .8em;
+	color: #fff;
+	width: 90%;
+	line-height: 1.15;
+	font-weight: 700;
+	display: block;
+	text-decoration: none;
+	text-transform: uppercase;
+	padding: .95em 0;
+	border-radius: .5em;
+	background: rgba(74,137,202, .8);
+	margin: auto;
+}
+/* ---- Photo Overlay ---- */
+
+.photo-desc {
+	font-size: .85em;
+	color: #fff;
+	padding: 1.1em 1em 0;
+	background: #345d88;
+}
+/* ---- Float clearfix ---- */
+
+.clearfix::after {
+	content: " ";
+	display: table;
+	clear: both;
+	
+}
+
+/* ================================= 
+  Photo 3D Transforms & Transitions
+==================================== */
+
+.cube-container {
+	box-shadow: 0 18px 40px 5px rgba(0,0,0,.4);
+	perspective: 800px;
+}
+
+.photo-cube {
+	transition: transform 4s ease-in-out;
+	width: 220px;
+	height: 220px;
+	transform-style: preserve-3d;
+	
+}
+
+.photo-cube:hover {
+	transform: rotateY(-270deg);
+}
+
+.front,
+.back,
+.left,
+.right {
+	width: 100%;
+	height: 100%;
+	display: block;
+	position: absolute;
+}
+
+.front {
+	transform: translate3d(0, 0, 110px);
+}
+
+.back {
+	transform: translateZ(-110px) rotateY(270deg);
+	transform-origin: center left;
+}
+
+.left {
+	transform: rotateY(-270deg) translate3d(110px, 0, 0);
+	transform-origin: top right;
+}
+
+.right {
+	transform: translateZ(-110px) rotateY(180deg);
+}
+
+.container {
+	padding: 0;
+}
+
+#text {
+    font-size: 30px;
+}
+
+#social{
+    background-color: black;
+}
+
+/****************** MEDIA  ************************/
+@media only screen and (max-width:650px) {
+    .title {
+    padding-top:75px;
+    font-size: 30px;
+}
+.lions { 
+    font-size: 30px;
+}
+}
+
+@media only screen and (max-width:350px) {
+    .title {
+    padding-top:150px;
+    font-size: 20px;}
+.lions {
+    font-size: 20px;}
+}
+
+
+
